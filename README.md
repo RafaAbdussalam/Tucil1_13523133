@@ -51,7 +51,7 @@
 # Installation
 1. Open github repository and copylink
    ```bash
-   git clone https://github.com/RafaAbdussalam/Algeo02-23133.git
+   git clone https://github.com/RafaAbdussalam/Tucil1_13523133.git
    code .
    ```
 2. Run file
