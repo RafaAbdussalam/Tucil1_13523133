@@ -1,0 +1,9 @@
+XYYS
+XXYZ
+WWZZ
+WVUU
+VVTU
+TTTU
+
+Waktu pencarian: 71 ms
+Banyak kasus yang ditinjau: 142050
