@@ -116,14 +116,14 @@ public class Board {
     }
     
     public String toString() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder str = new StringBuilder();
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                sb.append(grid[i][j]);
+                str.append(grid[i][j]);
             }
-            sb.append('\n');
+            str.append('\n');
         }
-        return sb.toString();
+        return str.toString();
     }
 
     public boolean isInBounds(int row, int col) {

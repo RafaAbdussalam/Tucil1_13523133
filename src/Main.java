@@ -29,8 +29,12 @@ public class Main {
                 System.out.println("Jenis kasus yang Valid: DEFAULT");
                 System.exit(0);
            }
-           
-           // List untuk menyimpan semua blok puzzle
+        //    // Debug info
+        //    System.out.println("\n=== Debug Info ===");
+        //    System.out.println("Board dimensions: " + rows + "x" + cols);
+        //    System.out.println("Number of blocks: " + jumlahblock);
+        //    System.out.println("Case type: " + Jeniskasus);
+        
            List<List<String>> Blocks = new ArrayList<>();
            List<String> currentBlock = new ArrayList<>();
            String currentLetter = "";
@@ -68,7 +72,15 @@ public class Main {
                System.exit(0);
            }
            
-           // ubah blok yang dibaca menjadi objek Block
+        //    // Debug: Print semua blok yang dibaca
+        //    System.out.println("\n=== Blocks Read ===");
+        //    for (int i = 0; i < Blocks.size(); i++) {
+        //        System.out.println("\nBlock " + (i + 1) + ":");
+        //        for (String line : Blocks.get(i)) {
+        //            System.out.println(line);
+        //        }
+        //    }
+           
            List<Block> blocks = new ArrayList<>();
            for (List<String> blockLines : Blocks) {
                if (!blockLines.isEmpty()) {
@@ -80,16 +92,16 @@ public class Main {
            Board board = new Board(rows, cols);
            Solver solver = new Solver(board, blocks);
            
-           System.out.println("\n=== Starting Solver ===");
+           System.out.println("\n=== Start Solver ===");
            long startTime = System.nanoTime();
            boolean solved = solver.solve();
            long endTime = System.nanoTime();
-           long executionTime = (endTime - startTime) / 1000000;
+           long TotalTime = (endTime - startTime) / 1000000;
            
            if (solved && board.isBoardFull()) {
                System.out.println("\nSolusi ditemukan:");
                board.printBoard();
-               System.out.println("\nWaktu pencarian: " + executionTime + " ms");
+               System.out.println("\nWaktu pencarian: " + TotalTime + " ms");
                System.out.println("Banyak kasus yang ditinjau: " + solver.getIterationCount());
                
                System.out.print("\nApakah anda ingin menyimpan solusi? (y/n): ");
@@ -98,12 +110,12 @@ public class Main {
                if (savefile.equalsIgnoreCase("y")) {
                    System.out.print("Masukkan nama file (Hasil.txt): ");
                    String FileName = scanner.nextLine();
-                   saveSolution(board, solver.getIterationCount(), executionTime, FileName);
+                   saveSolution(board, solver.getIterationCount(), TotalTime, FileName);
                    System.out.println("Solusi berhasil disimpan ke " + FileName);
                }
            } else {
                System.out.println("\nTidak ditemukan solusi.");
-               System.out.println("Waktu pencarian: " + executionTime + " ms");
+               System.out.println("Waktu pencarian: " + TotalTime + " ms");
                System.out.println("Banyak kasus yang ditinjau: " + solver.getIterationCount());
            }
            
@@ -117,11 +129,11 @@ public class Main {
        scanner.close();
    }
    
-   private static void saveSolution(Board board, long iterations, long executionTime, String fileName) {
+   private static void saveSolution(Board board, long iterations, long TotalTime, String fileName) {
        try {
-           FileWriter writer = new FileWriter("../test/" + fileName + ".txt");
+           FileWriter writer = new FileWriter("../test/" + fileName + ".txt" );
            writer.write(board.toString() + "\n");
-           writer.write("Waktu pencarian: " + executionTime + " ms\n");
+           writer.write("Waktu pencarian: " + TotalTime + " ms\n");
            writer.write("Banyak kasus yang ditinjau: " + iterations + "\n");
            writer.close();
        } catch (IOException e) {

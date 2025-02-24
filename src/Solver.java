@@ -26,7 +26,7 @@ public class Solver {
 
         List<Block> allBlock = new ArrayList<>();
         for(char[][] orientation : orientations) {
-            List<String> orientationStrings = orientationToStringList(orientation);
+            List<String> orientationStrings = allblocktolist(orientation);
             allBlock.add(new Block(orientationStrings, block.getId()));
         }
 
@@ -50,7 +50,7 @@ public class Solver {
         return false;
     }
     
-    private List<String> orientationToStringList(char[][] orientation) {
+    private List<String> allblocktolist (char[][] orientation) {
         List<String> result = new ArrayList<>();
         for (char[] row : orientation) {
             result.add(new String(row));

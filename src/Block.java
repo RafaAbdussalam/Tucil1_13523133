@@ -32,7 +32,6 @@ public class Block {
                 blockShape[i][j] = line.charAt(j);
             }
         }
-        
         return blockShape;
     }
     

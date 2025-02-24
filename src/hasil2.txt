@@ -1,8 +1,0 @@
-ABBCC
-AABCD
-EEEDD
-EEFFF
-GGGFF
-
-Waktu pencarian: 17404 ms
-Banyak kasus yang ditinjau: 5526
