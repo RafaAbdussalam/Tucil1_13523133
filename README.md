@@ -2,12 +2,11 @@
 > Tugas Kecil 1 13523133
 
 # About The Project
- is an 
+IQ Puzzle Pro Solver adalah project untuk menyelesaikan permainan IQ Puzzler Pro menggunakan algoritma brute force. IQ Puzzler Pro adalah permainan puzzle yang pemain untuk mengisi ruang kosong pada papan permainan dengan blok dengan bentuk yang unik. Permainan ini terdiri dari beberapa komponen yaitu papan dan beberapa blok dengan bentuk yang berbeda-beda.
 
 ## Key Features
-- h : 
-  h
-
+- Algoritma Brute Force : Algortima yang bersifat mengevaluasi semua kemungkinan satu per satu dalam memecahkan suatu persoalan
+- IQ Puzzle Pro Solver : Solver untuk menyelesaikan permainan IQ Puzzle Pro mengguankan Algortima Brute Force
 
 # Anggota
 | NIM  | NAMA |
@@ -17,60 +16,55 @@
 # Build With
 - JAVA
 
-# Features
--  
--
-
-# Struktur Program
-```bash
-└── Tucil1-13523133
- ├── bin
- ├── doc
- └── src
-  ├── backend
-  |├── data
-  ||     ├── uploads
-  ||     |    ├──  uploads
-  ||     └── mapper.json
-  |├── utils
-  |├── similarity.py
-  |└── requirements.txt
-  |└── 
-  | 
-  ├── package-lock.json
-  └── package.json                           --
- ├── test
- |    │
- |    ├── 
- |    └─── 
- |
- └── README
-
-```
-  
-# Installation
+# How to Run
 1. Open github repository and copylink
    ```bash
    git clone https://github.com/RafaAbdussalam/Tucil1_13523133.git
    code .
    ```
-2. Run file
-
-## Virtual Environment
-1. Install Virtualenv
+2. javac Main.java Block.java Board.java Solver.java
    ```bash
-   pip install virtualenv
+   javac Main.java Block.java Board.java Solver.java
    ```
-2. Create Virtual Enviroment Python
+3. Run
    ```bash
-   python -m venv venv
-   ```
-3. Activate Virtual Enviroment Python
-   ```bash
-   venv\Scripts\activate
+   java Main
    ```
 
+# Struktur Program
+```bash
+└── Tucil1-13523133
+ ├── bin
+ |├── Main.class
+ |├── Board.class
+ |├── Blocks.class
+ |└── Solver.class
+ ├── doc
+ |└── Tucil1_K3_13523133_RafaAbdussalamD
+ └── src
+ |├── Main.java
+ |├── Board.java
+ |├── Blocks.java
+ |└── Solver.java
+ |                      --
+ ├── test
+ |    ├── test1.txt
+ |    ├── test2.txt
+ |    ├── test3.txt
+ |    ├── test4.txt
+ |    ├── test5.txt
+ |    ├── test6.txt
+ |    ├── hasil1.txt
+ |    ├── hasil2.txt
+ |    ├── hasil3.txt
+ |    ├── hasil4.txt
+ |    ├── hasil5.txt
+ |    ├── hasil6.txt
+ |    └─── 
+ |
+ └── README
 
+```
 
 # Links
 Repository : https://github.com/RafaAbdussalam/Tucil1_13523133.git
