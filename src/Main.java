@@ -98,7 +98,7 @@ public class Main {
            long endTime = System.nanoTime();
            long TotalTime = (endTime - startTime) / 1000000;
            
-           if (solved && board.isBoardFull()) {
+           if (solved && board.isFull()) {
                System.out.println("\nSolusi ditemukan:");
                board.printBoard();
                System.out.println("\nWaktu pencarian: " + TotalTime + " ms");

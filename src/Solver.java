@@ -35,7 +35,7 @@ public class Solver {
                 for (Block orientedBlocks : allBlock) {
                     iterationCount++;
 
-                    if (board.canPlaceBlock(orientedBlocks, row, col)) {
+                    if (board.canbePlace(orientedBlocks, row, col)) {
                         board.placeBlock(orientedBlocks, row, col);
                         
                         if (solvepuzzle(blockIndex + 1)) {
