@@ -54,13 +54,12 @@ IQ Puzzle Pro Solver adalah project untuk menyelesaikan permainan IQ Puzzler Pro
  |    ├── test4.txt
  |    ├── test5.txt
  |    ├── test6.txt
+ |    ├── test7.txt
+ |    ├── test8.txt
  |    ├── hasil1.txt
- |    ├── hasil2.txt
- |    ├── hasil3.txt
  |    ├── hasil4.txt
- |    ├── hasil5.txt
  |    ├── hasil6.txt
- |    └─── 
+ |    └── hasil8.txt
  |
  └── README
 
