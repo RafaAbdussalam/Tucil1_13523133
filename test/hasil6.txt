@@ -1,0 +1,8 @@
+ABCDE
+FGHIJ
+KLMNO
+PQRST
+UVWXY
+
+Waktu pencarian: 6 ms
+Banyak kasus yang ditinjau: 4525

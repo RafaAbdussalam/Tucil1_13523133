@@ -1,0 +1,8 @@
+BCC
+EEC
+DCC
+DDF
+DFF
+
+Waktu pencarian: 44 ms
+Banyak kasus yang ditinjau: 34511
