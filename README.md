@@ -8,11 +8,6 @@ IQ Puzzle Pro Solver adalah project untuk menyelesaikan permainan IQ Puzzler Pro
 - Algoritma Brute Force : Algortima yang bersifat mengevaluasi semua kemungkinan satu per satu dalam memecahkan suatu persoalan
 - IQ Puzzle Pro Solver : Solver untuk menyelesaikan permainan IQ Puzzle Pro mengguankan Algortima Brute Force
 
-# Anggota
-| NIM  | NAMA |
-| ------------- | ------------- |
-| 13523133 | Rafa Abdussalam Danadyaksa  |
-
 # Build With
 - JAVA
 
@@ -64,6 +59,10 @@ IQ Puzzle Pro Solver adalah project untuk menyelesaikan permainan IQ Puzzler Pro
  └── README
 
 ```
+# Anggota
+| NIM  | NAMA |
+| ------------- | ------------- |
+| 13523133 | Rafa Abdussalam Danadyaksa  |
 
 # Links
 Repository : https://github.com/RafaAbdussalam/Tucil1_13523133.git
