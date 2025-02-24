@@ -1,4 +1,4 @@
-# Tubes Kecil 1 IF2211 Strategi Algoritma_13523133
+# Tugas Kecil 1 IF2211 Strategi Algoritma_13523133
 > Tugas Kecil 1 13523133
 
 # About The Project
